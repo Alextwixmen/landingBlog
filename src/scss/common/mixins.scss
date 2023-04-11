@@ -1,6 +1,5 @@
-@mixin button($width, $height, $border-radius, $line-height) {
-  width: $width;
-  height: $height;
+@mixin button($padding-top, $padding-left, $border-radius, $line-height) {
+  padding: $padding-top $padding-left;
   border-radius: $border-radius;
   line-height: $line-height;
   cursor: pointer;

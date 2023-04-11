@@ -10,9 +10,7 @@
 
 .advertising-blck__inner-container {
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-center;
   flex-direction: column;
   max-width: 716px;
   gap: 48px;
@@ -25,7 +23,7 @@
   font-size: 48px;
 }
 .advertising-blck__button {
-  @include button(210px, 60px, 56px, 28px);
+  @include button(16px, 56px, 56px, 28px);
   font-weight: 700;
   font-size: 20px;
   background-color: #65e4a3;

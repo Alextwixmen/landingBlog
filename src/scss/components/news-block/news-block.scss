@@ -40,10 +40,22 @@
   gap: 50px;
 }
 .news-block__button {
-  @include button(219px, 60px, 56px, 28px);
+  @include button(16px, 56px, 56px, 28px);
   @extend %flex-center;
   background-color: transparent;
   font-weight: 700;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  -o-transition: all 3s;
+  transition: all 3s;
+}
+.news-block__button_show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
 }
 .post_animation {
   transition: opacity 1.5s;

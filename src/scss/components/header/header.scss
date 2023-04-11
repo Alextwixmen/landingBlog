@@ -19,7 +19,7 @@
     color: $secondary-text-color;
   }
   &__button {
-    @include button(128px, 40px, 24px, 24px);
+    @include button(8px, 40px, 24px, 24px);
     @extend %flex-center;
     background-color: transparent;
     font-weight: 700;
