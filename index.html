@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/landingBlog/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <!-- <link rel="stylesheet" href="./src/scss/index.scss" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,260 +16,268 @@
       rel="stylesheet"
     />
     <title>Boldo</title>
-    <script type="module" crossorigin src="/landingBlog/assets/index-c505322a.js"></script>
-    <link rel="stylesheet" href="/landingBlog/assets/index-d33e27ce.css">
+    <script type="module" crossorigin src="/landingBlog/assets/index-b5b105fc.js"></script>
+    <link rel="stylesheet" href="/landingBlog/assets/index-e2fec157.css">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__content-wrapper">
-          <div class="logo">
-            <img class="logo__svg" src="/landingBlog/assets/logo-992a305c.svg" />
-            <span class="logo__text">Boldo</span>
-          </div>
-          <nav class="menu">
-            <li class="menu__item">Products</li>
-            <li class="menu__item">Services</li>
-            <li class="menu__item">About</li>
-            <button class="menu__button">Log in</button>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <main class="main-content">
-      <div class="container">
-        <section class="intro-block">
-          <div class="intro-block__header">
-            <span class="intro-block__header-text">Blog</span>
-            <h1 class="intro-block__main-header-text">Thoughts and words</h1>
-          </div>
-          <div class="intro-block__main-part">
-            <img src="/landingBlog/assets/img1_section1-d768e76c.png" />
-            <div class="intro-block__left-part">
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="intro-block__main-text">
-                Pitch termsheet backing validation focus release.
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Chandler Bing</span>
-              </div>
-            </div>
-          </div>
-          <div class="main-content__divider"></div>
-        </section>
-      </div>
-      <section class="news-block">
-        <div class="news-container">
-          <div class="news-block__header">Latest news</div>
-          <div class="news-block__wrapper">
-            <article class="post">
-              <img
-                class="post__img"
-                src="/landingBlog/assets/img1_section2-859a05ef.png"
-              />
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="post__text">
-                Pitch termsheet backing validation focus release.
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Chandler Bing</span>
-              </div>
-            </article>
-
-            <article class="post">
-              <img
-                class="post__img"
-                src="/landingBlog/assets/img2_section2-a67d6321.png"
-              />
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="post__text">
-                Seed round direct mailing non-disclosure agreement graphical
-                user interface rockstar.
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Rachel Green</span>
-              </div>
-            </article>
-
-            <article class="post">
-              <img
-                class="post__img"
-                src="/landingBlog/assets/img3_section2-480d75cf.png"
-              />
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="post__text">
-                Beta prototype sales iPad gen-z marketing network effects value
-                proposition
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Monica Geller</span>
-              </div>
-            </article>
-
-            <article class="post">
-              <img
-                class="post__img"
-                src="/landingBlog/assets/img4_section2-d3d293c4.png"
-              />
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="post__text">
-                Pitch termsheet backing validation focus release.
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Chandler Bing</span>
-              </div>
-            </article>
-            <article class="post">
-              <img
-                class="post__img"
-                src="/landingBlog/assets/img5_section2-819cb0b1.png"
-              />
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="post__text">
-                Seed round direct mailing non-disclosure agreement graphical
-                user interface rockstar.
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Rachel Green</span>
-              </div>
-            </article>
-            <article class="post">
-              <img
-                class="post__img"
-                src="/landingBlog/assets/img4_section2-d3d293c4.png"
-              />
-              <div class="date-and-category">
-                <span class="date-and-category__category">Category</span>
-                <span class="date-and-category__date">November 22, 2021</span>
-              </div>
-              <div class="post__text">
-                Beta prototype sales iPad gen-z marketing network effects value
-                proposition
-              </div>
-              <div class="author-block">
-                <img
-                  src="data:image/png;base64,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"
-                  class="author-block__img"
-                />
-                <span class="author-block__full-name">Monica Geller</span>
-              </div>
-            </article>
-          </div>
-          <div class="container btn-container">
-            <button class="news-block__button">Load more</button>
-          </div>
-        </div>
-      </section>
-      <section class="advertising">
+    <div class="wrapper">
+      <header class="header">
         <div class="container">
-          <div class="advertising-block">
-            <div class="advertising-block__inner-container">
-              <div class="advertising-block__text">
-                An enterprise template to ramp up your company website
+          <div class="header__content-wrapper">
+            <div class="logo">
+              <img class="logo__svg" src="/landingBlog/assets/logo-992a305c.svg" />
+              <span class="logo__text">Boldo</span>
+            </div>
+            <nav class="menu open">
+              <li class="menu__item">Products</li>
+              <li class="menu__item">Services</li>
+              <li class="menu__item">About</li>
+              <button class="menu__button">Log in</button>
+            </nav>
+            <div class="burger">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main-content">
+        <section class="intro-block">
+          <div class="container">
+            <div class="intro-block__header">
+              <h6 class="intro-block__header-text">Blog</h6>
+              <h1 class="intro-block__main-header-text">Thoughts and words</h1>
+            </div>
+            <div class="intro-block__main-part">
+              <img src="/landingBlog/assets/img1_section1-d768e76c.png" />
+              <div class="intro-block__left-part">
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="intro-block__main-text">
+                  Pitch termsheet backing validation focus release.
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Chandler Bing</span>
+                </div>
               </div>
-              <form class="advertising-block__form">
-                <input
-                  class="advertising-block__input"
-                  type="email"
-                  placeholder="Your email address"
+            </div>
+            <div class="main-content__divider"></div>
+          </div>
+        </section>
+
+        <section class="news-block">
+          <div class="news-container">
+            <!-- <div class="news-wrapper"> -->
+            <h2 class="news-block__header">Latest news</h2>
+            <div class="news-block__wrapper">
+              <article class="post">
+                <img
+                  class="post__img"
+                  src="/landingBlog/assets/img1_section2-859a05ef.png"
                 />
-                <button class="advertising-block__button">Start now</button>
-              </form>
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="post__text">
+                  Pitch termsheet backing validation focus release.
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Chandler Bing</span>
+                </div>
+              </article>
+
+              <article class="post">
+                <img
+                  class="post__img"
+                  src="/landingBlog/assets/img2_section2-a67d6321.png"
+                />
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="post__text">
+                  Seed round direct mailing non-disclosure agreement graphical
+                  user interface rockstar.
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Rachel Green</span>
+                </div>
+              </article>
+
+              <article class="post">
+                <img
+                  class="post__img"
+                  src="/landingBlog/assets/img3_section2-480d75cf.png"
+                />
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="post__text">
+                  Beta prototype sales iPad gen-z marketing network effects
+                  value proposition
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Monica Geller</span>
+                </div>
+              </article>
+
+              <article class="post">
+                <img
+                  class="post__img"
+                  src="/landingBlog/assets/img4_section2-d3d293c4.png"
+                />
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="post__text">
+                  Pitch termsheet backing validation focus release.
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAohSURBVHgBnVdLbBT3Hf7msbPvl9mHbTCsQyCGhsSEJCKNGuKK5lJVJVXvaaReOJUce4pzaKW2h8AtPYWckjZSBYeqTYUCrdRSEiKcAuEVw9hee22vd3f2Pe/p9x8HSiFNoo40np3x/P+/1/d9v99I+IZH604r5yneEcg4hADTElDh49wX/zYCBLokyXMy5HNwcDo/mTe+yb7S1xqutSqu6x6TIb0SBEFoUJI2l/H+3u+HDhknZVl5Iz+W1/H/OCAi9hX/dUjBsfuf32/0yxwQ9+L5fQ+Oy478xv/KyJc6ULtWq0hx5awqSxWxoTh9379n4CsjesABce96nu753szY5Jj+4Pvygw+uXLoy7Sr+Wdd2Kpv7COObkT5knLeONYTvuQjon3jPth14XnDPiTBLxMtwaJ298tHN6YccfjByM7DPKopSURUFHqO+m+aIqkLlSTMY9FvQb15Bq7WKtWUdY+Ux7J6egZbMs2LMgBRAkQlHSYbwg+6g2W3xbOo39M9mjr56VH/IgbfffjO397FvX4pHkxVxb9kmNC0uwuJVE7ugP+wgFY3i4w9/D0lLIhZPwTA2MBx0sSWfw8jkPmh8Vm+uo9fvojRSRjyRQbkwjtvVW6iu3EGv19CH3c7+2dnjISbUuw784c+nX5+7OlcZLW1Dt9uH49gobhkVSYTr2zA6bYyPFLB363YMLRu5bBkCFclUFhvrVazXV7A3kcLVpcVwrcOynGtsQFEjeOqJp9Gmo+32BmzHrJiW9TqXvibsKuJPZapS6ViD9xqtBmyzhys3bqDd7TA/DpZWlrBQXcRafQ3790yjXv0cV2/eRDSiYHVFx219niUK0Gi3oLJU6S0F7ipBlgV2PKhEmWHU4TkmBsM+BuYAS7X1g5Fc8p2N6oYRZiCSVmbz+SQyqQSq9ToMZkCLsOZ0r1wuwBwOsbhSQzadwc0L1/k8hjRTa/a6aPX6vPfh2BZqdGiMWbgwd5F4UWAyU77jI0JnCQliImA5I1isihINBb2PKblKLqfKkXcFZo12Dwq9z6ST6JsmzyH0pRV4gYupyi7sHN2K3loV2ycegTXsIUVjk9u2I0ZnO70OZBpVtQSuLS4w1Q5ixEuHTtbWm2gaHdRbHWzw7HaHMAfOlCZFfkuwR44Q66jXO2HaBPKHpo1UMoFWu0taeegNhkhHsujtbMF1LNiknrG2gtzoGLqNGlbqy1CjcfSMFnZMPgbHJS0DBe1OByQCAe1wnYfh0GZmlXBP23JyQVI5otoD70V70CfWyHNGL+gzUGwuclk/JVwYT0SRz2W5sUeZp7MrVdSXq+i7JqIsYqPRhMvU9ns9LJOWFlPf6A3DMvgUCJMBeS7LZHkIqBHi3uc1qimH1FQm9qTgqngojAtvBX9lAkrTfG6AsG6ZeBwtRmswpdu2PoJ4Lg2LgG0wE4trDaRHUkxvH6PN+maKuZ8QAaEj/Z5NZ2SywyVWAvjupr44ljutMqpKMhNHNKEJyQydEIomUBNIm0LpEEiCgq2126g1O7h09QPs3F6CzVRvNNtoW3S6T3SvGXj+mTxMe4GlDEIKRyMashmFAE7xd5TlHXI/ZpKBBoFfUX0nyFl9pkgYp/ohQuXjWknIryKHDj1aHkc2pmKBXHY9K8SEynLFyAQiD0afQGV5tuRS8DoGXnryAM5fvYye68AiGENMdLt0pwuh5mJPoUCiu6oKgSdqLRMD6VSc3qZDzyNMu0KhzJN63332OdSW52FQJwJuFtVU2o0jkc4TEwqBFaHMmph+rIJUfgteevpF/OD5Qzh78R8486858t8MpdwWkbMMXuCF2Rb4IAkix2gnZpn01hbgs4hWE6K7pInsQweew66Jrbh86TxEato9M5TlUqmIeDxNpYsS6QwrXUStL6E6AFaRwjBdRmFiFzR3iGqtxpS7lGwbLjNlsWSsP00EhioFga5p6nQ0Sg6Tz4m4RiGTcPjAM5jctR9RyUOtOk99r6NYLKO8YxyxWBzFrDCuoZArY/zxNObrbcRTGUbpokE6rjYMZkZGfmIf8PFFdMkKUSZBdVcYJwhlJaKrFI9PeTedSEZRKCTDbrbrkQlkx3ZgqGbQXPgEqrmBgOonMdrS+BSKEzuRorEIUy86pc2N9QsXsbZRhxKLIp4t0BDr7LtI8X7Pvidw59bcZgnIACFcJpudrMhzajqpnYsltFe2bUtj394KtGgM89VlNIMktMVr2DM2iksfXUecUataGrkiAZnNI0qVk+XNXvaXv5/BjaUl7Ni5G1vLo8gmU+ixjDfmb6OydRwTO8Yw/a3kJtC5xvHMsJyW455TD+ybOnXwOy+8WVu7kevbLTi+zIiSBFoSWwsmm8iQXcxAIpNHdqSEXL4QlkBllxPHAuurk5oHnjrIlpxnCUlpssdoG2G3D7kf2xx9BtQNAXiH7Oiyhaf84LRy/bpuvvzjmTEv6B4sjhSRpgSr6ijFxcDfzv8TQy2LgPpemXoW5YkpZLeUwtQLlRNpFqCK0JkM1zWaa9hgW1YUFXeWdPi8ZtngcgkZ5byGCGle5IyQTqQpx9bJN3/9we/CHCYiOJ5NZ392/vInWFyoY/ujh3Fzvop8aQcqk3vwyI5JbpQO6x3WdjOgsA0LUJmWycg4BUXiKGRGwq6nsoE12m1IxQLXxjFWylE7VGqIEbbpeLLwBnB6cx44ffqcsWe6kO/0jIOPPzpFREdgEizZKFUsmcaeXbvvjWZiOL07HwYErEe61jtdOuGQ7wPcWbhDteuzJyyFglUqlZGLddhVPyELJJw5/yE+vfbZiRO/ePe9/5qIcsXSbCa75YeeH620uwNMjI2j0+AgwcmmE6pYEEYvVEz8lr6Y5gS1Bhy/BqYVzgtCS0T/9z0ffQ41Fusd11x2vwganTrkiKRfOHd79q7de1Px7GsnjcnSzplovKRbnAViBJJLqty6dR3La8tszU30aajLvt9jQxL9X0xQ9cY6VjktNYwGmnxnnfce5Vqk1qZxj9TbPr6bMj1KMTL17z31woyhG8ZDDojj1Vdn9cu68zITq4uUp/MjuMHxyw4bRxBuaHHeM6mW3X6P3W8DC6sLPBehL36OcJL2huj0jTArIguu73DCalDSi7ofyC8fPfor/X6bD30XvH/8N3PF8thMKp3RJUXDHiriNTrxn7oHIQ58cloML+12h5MPaRtL0JiPEYKwlCui2xYzpQCoi+rqsr7eqM8c/+X7cw/ae8gBcZw7+Zbesdv7++bghK9E0OMUJF69a/zuld+LNOqFWfGlCHFgIpPJheAUI5noyBxCT6Rzlf2zP39L/zJbX/txOn3kSCWpJmd/dPjwK4L7YsgIGwqN2sTI9dufQ2+12Vgk1jnPyZjfEapinPnTH98x+85xc1XXv2p/9escmDt1SuflJz/9/uFjhsPP8wAvso0+KYYJ0c9FW2122kZMS/I9aU6F8teUilPG/K1v9Hn+b32ZeJtfRA4JAAAAAElFTkSuQmCC"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Chandler Bing</span>
+                </div>
+              </article>
+              <article class="post">
+                <img
+                  class="post__img"
+                  src="/landingBlog/assets/img5_section2-819cb0b1.png"
+                />
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="post__text">
+                  Seed round direct mailing non-disclosure agreement graphical
+                  user interface rockstar.
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Rachel Green</span>
+                </div>
+              </article>
+              <article class="post">
+                <img
+                  class="post__img"
+                  src="/landingBlog/assets/img4_section2-d3d293c4.png"
+                />
+                <div class="date-and-category">
+                  <span class="date-and-category__category">Category</span>
+                  <span class="date-and-category__date">November 22, 2021</span>
+                </div>
+                <div class="post__text">
+                  Beta prototype sales iPad gen-z marketing network effects
+                  value proposition
+                </div>
+                <div class="author-block">
+                  <img
+                    src="data:image/png;base64,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"
+                    class="author-block__img"
+                  />
+                  <span class="author-block__full-name">Monica Geller</span>
+                </div>
+              </article>
+            </div>
+            <div class="container btn-container">
+              <button class="news-block__button">Load more</button>
+            </div>
+            <!-- </div> -->
+          </div>
+        </section>
+        <section class="advertising">
+          <div class="container">
+            <div class="advertising-blck">
+              <div class="advertising-blck__inner-container">
+                <div class="advertising-blck__text">
+                  An enterprise template to ramp up your company website
+                </div>
+                <form class="advertising-blck__form">
+                  <input
+                    class="advertising-blck__input"
+                    type="email"
+                    placeholder="Your email address"
+                  />
+                  <button class="advertising-blck__button">Start now</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-wrapper">
+            <div class="footer-info">
+              <div class="footer-info__logo">
+                <div class="logo">
+                  <img class="logo__svg" src="/landingBlog/assets/logo-992a305c.svg" />
+                  <span class="logo__text">Boldo</span>
+                </div>
+              </div>
+              <div class="footer-text">
+                <div class="footer-text__paragraph">
+                  Social media validation business model canvas graphical user
+                  interface launch party creative facebook iPad twitter.
+                </div>
+                <p class="footer-text__rights">All rights reserved.</p>
+              </div>
+            </div>
+            <div class="main-links">
+              <div class="links-titles">
+                <div>Langinds</div>
+                <div>Company</div>
+                <div>Resources</div>
+              </div>
+              <div class="footer-links">
+                <ul class="footer-links__list">
+                  <li><a class="footer-links__link" href="#">Home</a></li>
+                  <li><a class="footer-links__link" href="#">Products</a></li>
+                  <li><a class="footer-links__link" href="#">Services</a></li>
+                </ul>
+                <ul class="footer-links__list footer-links__company">
+                  <li><a class="footer-links__link" href="#">Home</a></li>
+                  <li><a class="footer-links__link" href="#">Careers</a></li>
+                  <div class="footer-links__hiring">Hiring!</div>
+                  <li><a class="footer-links__link" href="#">Services</a></li>
+                </ul>
+                <ul class="footer-links__list footer-links__last_link">
+                  <li><a class="footer-links__link" href="#">Blog</a></li>
+                  <li><a class="footer-links__link" href="#">Products</a></li>
+                  <li>
+                    <a class="footer-links__link" href="#">Services</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wrapper">
-          <div class="footer-info">
-            <div class="footer-info__logo">
-              <div class="logo">
-                <img class="logo__svg" src="/landingBlog/assets/logo-992a305c.svg" />
-                <span class="logo__text">Boldo</span>
-              </div>
-            </div>
-            <div class="footer-text">
-              <div class="footer-text__paragraph">
-                Social media validation business model canvas graphical user
-                interface launch party creative facebook iPad twitter.
-              </div>
-              <p class="footer-text__rights">All rights reserved.</p>
-            </div>
-          </div>
-          <div class="main-links">
-            <div class="links-titles">
-              <div>Langinds</div>
-              <div>Company</div>
-              <div>Resources</div>
-            </div>
-            <div class="footer-links">
-              <ul class="footer-links__list">
-                <li><a class="footer-links__link" href="#">Home</a></li>
-                <li><a class="footer-links__link" href="#">Products</a></li>
-                <li><a class="footer-links__link" href="#">Services</a></li>
-              </ul>
-              <ul class="footer-links__list footer-links__company">
-                <li><a class="footer-links__link" href="#">Home</a></li>
-                <li><a class="footer-links__link" href="#">Careers</a></li>
-                <div class="footer-links__hiring">Hiring!</div>
-                <li><a class="footer-links__link" href="#">Services</a></li>
-              </ul>
-              <ul class="footer-links__list footer-links__last_link">
-                <li><a class="footer-links__link" href="#">Blog</a></li>
-                <li><a class="footer-links__link" href="#">Products</a></li>
-                <li>
-                  <a class="footer-links__link" href="#">Services</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     
   </body>
 </html>
