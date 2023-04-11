@@ -7,3 +7,10 @@ document.querySelector('.burger').addEventListener('click', function () {
 document.querySelector('.uppward').addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const typed = new Typed('#typed', {
+  typeSpeed: 50,
+  backSpeed: 50,
+  startDelay: 500,
+  stringsElement: '#typed-strings',
+});
