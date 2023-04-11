@@ -45,3 +45,11 @@
   background-color: transparent;
   font-weight: 700;
 }
+.post_animation {
+  transition: opacity 1.5s;
+  opacity: 0;
+}
+.element-show {
+  opacity: 1;
+  transition: opacity 1.5s;
+}

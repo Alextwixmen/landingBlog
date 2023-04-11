@@ -1,7 +1,6 @@
 .wrapper {
   overflow: auto;
   min-height: 100%;
-  // overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -58,7 +57,4 @@ body {
     height: 70px;
     right: 4px;
   }
-}
-#typed {
-  display: inline;
 }
