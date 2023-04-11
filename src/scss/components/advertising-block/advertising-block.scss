@@ -1,11 +1,14 @@
-.advertising-block {
+.advertising-blck {
   width: 100%;
-  height: 391px;
+  padding-top: 72px;
+  padding-bottom: 72px;
   border: 1px solid black;
   background-color: $secondary-text-color;
   margin-bottom: 84px;
+  @extend %flex-center;
 }
-.advertising-block__inner-container {
+
+.advertising-blck__inner-container {
   text-align: center;
   display: flex;
   align-items: center;
@@ -14,22 +17,20 @@
   max-width: 716px;
   gap: 48px;
 }
-.advertising-block {
-  @extend %flex-center;
-}
-.advertising-block__text {
+
+.advertising-blck__text {
   font-family: $secondary-font;
   color: #fff;
   line-height: 72px;
   font-size: 48px;
 }
-.advertising-block__button {
+.advertising-blck__button {
   @include button(210px, 60px, 56px, 28px);
   font-weight: 700;
   font-size: 20px;
   background-color: #65e4a3;
 }
-.advertising-block__input {
+.advertising-blck__input {
   width: 370px;
   height: 56px;
   background-color: #fff;
@@ -37,7 +38,7 @@
   border-radius: 240px;
   padding: 12px 158px 12px 32px;
 }
-.advertising-block__input::placeholder {
+.advertising-blck__input::placeholder {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

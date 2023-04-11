@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: space-between;
   padding-right: 79px;
+  padding-bottom: 117px;
 }
 .footer-info {
   max-width: 300px;
@@ -31,9 +32,7 @@
 .links-titles {
   display: flex;
   align-items: center;
-  //   justify-content: center;
   justify-content: space-between;
-
   gap: 96px;
   margin-bottom: 32px;
   font-weight: 700;
@@ -44,10 +43,8 @@
 .footer-links {
   display: flex;
   width: 100%;
-  //   align-items: stretch;
   justify-content: space-between;
   flex-direction: row;
-  //   gap: 96px;
   &__list {
     display: flex;
     align-items: flex-start;

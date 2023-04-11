@@ -1,0 +1,77 @@
+@include tablet {
+  .menu {
+    // display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 55;
+    overflow-y: auto;
+    padding: 50px 40px;
+    background-color: $secondary-text-color;
+    &__item {
+      color: whitesmoke;
+    }
+    &__button {
+      background-color: whitesmoke;
+    }
+  }
+  .open {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+  }
+  .burger span {
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: $secondary-text-color;
+  }
+  .burger::before,
+  .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $secondary-text-color;
+    transition: all 0.3s ease 0s;
+  }
+  .burger::before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger.active span {
+    transform: scale(0);
+    background-color: whitesmoke;
+  }
+  .burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+    background-color: whitesmoke;
+  }
+  .burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+    background-color: whitesmoke;
+  }
+  .logo__text {
+    font-size: 35px;
+  }
+  .header__content-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@include mobile {
+}

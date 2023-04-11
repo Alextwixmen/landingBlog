@@ -1,0 +1,12 @@
+@include tablet {
+  .footer-wrapper {
+    flex-wrap: wrap-reverse;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    padding-left: 20px;
+  }
+}
+@include mobile {
+}

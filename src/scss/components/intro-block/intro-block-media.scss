@@ -1,1 +1,15 @@
-
+@include tablet {
+  .container {
+    max-width: 768px;
+  }
+  .intro-block__main-part {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .intro-block__left-part {
+    padding-left: 20px;
+  }
+}
+@include mobile {
+}
