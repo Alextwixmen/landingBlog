@@ -1,12 +1,14 @@
 .wrapper {
   overflow: auto;
   min-height: 100%;
+  // overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-right: calc(-1 * (100vw - 100%));
 }
 body {
+  overflow-x: hidden;
   color: $primary-text-color;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
@@ -34,4 +36,26 @@ body {
     line-height: 34px;
   }
   cursor: pointer;
+}
+.uppward {
+  display: none;
+}
+@include tablet {
+  .uppward {
+    position: fixed;
+    display: block;
+    top: 800px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    cursor: pointer;
+  }
+}
+@include mobile {
+  .uppward {
+    width: 40px;
+    height: 70px;
+    right: 4px;
+  }
 }
