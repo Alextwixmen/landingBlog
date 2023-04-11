@@ -45,6 +45,7 @@
   width: 100%;
   justify-content: space-between;
   flex-direction: row;
+  gap: 96px;
   &__list {
     display: flex;
     align-items: flex-start;
@@ -79,5 +80,9 @@
   }
   &__company {
     position: relative;
+  }
+  &__first-link {
+    color: $primary-text-color;
+    font-weight: 700;
   }
 }

@@ -12,5 +12,9 @@
 @include mobile {
   .advertising-blck__input {
     width: 300px;
+    padding-right: 95px;
+  }
+  .advertising-blck__input::placeholder {
+    font-size: 18px;
   }
 }

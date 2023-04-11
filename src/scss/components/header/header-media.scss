@@ -1,6 +1,5 @@
 @include tablet {
   .menu {
-    // display: none;
     flex-direction: column;
     position: fixed;
     height: 100%;
@@ -10,6 +9,7 @@
     z-index: 55;
     overflow-y: auto;
     padding: 50px 40px;
+    opacity: 0.9;
     background-color: $secondary-text-color;
     &__item {
       color: whitesmoke;
