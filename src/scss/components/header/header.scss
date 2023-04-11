@@ -1,0 +1,38 @@
+.header {
+  margin-bottom: 72px;
+  &__content-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.logo {
+  @extend %flex-center;
+  gap: 11px;
+  &__text {
+    font-family: $secondary-font;
+    color: $secondary-text-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 43.25px;
+    line-height: 34px;
+  }
+}
+.menu {
+  gap: 40px;
+  @extend %flex-center;
+  &__item {
+    font-weight: 600;
+    line-height: 28px;
+    color: $secondary-text-color;
+  }
+  &__button {
+    @include button(128px, 40px, 24px, 24px);
+    @extend %flex-center;
+    background-color: transparent;
+    font-weight: 700;
+  }
+}

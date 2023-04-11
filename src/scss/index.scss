@@ -1,0 +1,15 @@
+@import './common/';
+@import './components/header/';
+@import './components/intro-block/';
+@import './components/news-block/';
+@import './components/advertising-block/';
+@import './components/footer/';
+// body {
+//   @include my-test-mixin(black);
+// }
+// body {
+//   @extend %flex-center;
+// }
+// body {
+//   max-width: $content-width;
+// }
