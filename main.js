@@ -39,8 +39,6 @@ function startAnimation() {
       }
       if (elem.isIntersecting) {
         elem.target.classList.add('element-show');
-      } else {
-        elem.target.classList.remove('element-show');
       }
     });
   }

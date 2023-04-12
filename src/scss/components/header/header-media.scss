@@ -16,6 +16,7 @@
     }
     &__button {
       background-color: whitesmoke;
+      border: none;
     }
   }
   .open {
@@ -67,5 +68,11 @@
   }
   .logo__text {
     font-size: 35px;
+  }
+  .header__content-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 15px 0px;
   }
 }

@@ -42,3 +42,6 @@
   font-size: 20px;
   color: $primary-text-color;
 }
+input:focus::-webkit-input-placeholder {
+  color: #ffffff00;
+}

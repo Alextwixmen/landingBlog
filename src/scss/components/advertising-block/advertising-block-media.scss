@@ -16,12 +16,16 @@
 @include mobile {
   .advertising-blck {
     &__input {
-      width: 300px;
+      width: 100%;
       padding-right: 95px;
+      padding: 12px 23px 12px 32px;
     }
     &__text {
       line-height: 50px;
       font-size: 35px;
+    }
+    &__button {
+      width: 100%;
     }
   }
 
