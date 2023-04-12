@@ -2,17 +2,37 @@
   .container {
     max-width: 768px;
   }
-  .intro-block__main-part {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  .intro-block__left-part {
-    padding-left: 20px;
-  }
-  .intro-block__img {
-    width: 450px;
+  .intro-block {
+    &__main-part {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    &__left-part {
+      padding-left: 20px;
+    }
+    &__img {
+      width: 450px;
+    }
+    &__main-header-text {
+      font-size: 55px;
+      line-height: 66px;
+    }
+    &__main-text {
+      font-size: 40px;
+      line-height: 66px;
+    }
   }
 }
 @include mobile {
+  .intro-block {
+    &__main-header-text {
+      font-size: 45px;
+      line-height: 58px;
+    }
+    &__main-text {
+      font-size: 35px;
+      line-height: 50px;
+    }
+  }
 }

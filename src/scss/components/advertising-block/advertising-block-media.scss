@@ -1,17 +1,30 @@
 @include tablet {
-  .advertising-blck__form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
+  .advertising-blck {
+    &__form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__text {
+      line-height: 60px;
+      font-size: 40px;
+    }
   }
 }
 @include mobile {
-  .advertising-blck__input {
-    width: 300px;
-    padding-right: 95px;
+  .advertising-blck {
+    &__input {
+      width: 300px;
+      padding-right: 95px;
+    }
+    &__text {
+      line-height: 50px;
+      font-size: 35px;
+    }
   }
+
   .advertising-blck__input::placeholder {
     font-size: 18px;
   }
