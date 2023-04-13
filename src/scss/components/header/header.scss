@@ -23,6 +23,7 @@
     @extend %flex-center;
     background-color: transparent;
     font-weight: 700;
+    border-color: $secondary-text-color;
   }
 }
 .burger {
